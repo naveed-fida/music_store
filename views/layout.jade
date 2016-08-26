@@ -1,0 +1,14 @@
+include /_mixins
+
+doctype html
+html
+  head
+    title= "Music Store"
+    +stylesheet_link_tag('application')
+    +javascript_tag('vendor/all')
+  body
+    block content
+    +javascript_tag('models/album')
+    +javascript_tag('collections/albums')
+    +javascript_tag('application')
+    block scripts

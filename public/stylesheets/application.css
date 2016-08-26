@@ -1,0 +1,97 @@
+@import "whitespace-reset.css";
+@import 'https://fonts.googleapis.com/css?family=Lato';
+body {
+  font: normal 15px 'Lato' sans-serif;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 10px;
+}
+h1 {
+  color: #de4c49;
+  font-size: 2.2em;
+  margin: 0 0 20px 10px;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 5px 0 10px 0;
+}
+h3 {
+  font-size: 1.2em;
+  margin: 0 0 5px 0;
+}
+#albums li {
+  display: inline-block;
+  width: 20%;
+  padding: 10px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+#albums li img {
+  width: 100%;
+}
+#albums li a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: #de4c49;
+  border-radius: 8px;
+  margin: 10px 0 0 0;
+  text-align: center;
+  transition: box-shadow 200ms ease, top 200ms ease, left 200ms ease;
+  box-shadow: 2px 2px 0 2px #da3733;
+}
+#albums li a:active {
+  left: 2px;
+  top: 2px;
+  box-shadow: 1px 1px 0 1px #da3733;
+}
+form {
+  width: 500px;
+  margin: 25px auto 0 auto;
+  font-size: 18px;
+}
+form h1 {
+  margin-left: 0;
+}
+form input {
+  margin: 5px 0 20px 0;
+  font-size: 18px;
+  padding: 6px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+}
+form input:focus {
+  border: 1px solid #de4c49;
+}
+form button {
+  position: relative;
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: #de4c49;
+  border-radius: 8px;
+  margin: 10px 0 0 0;
+  text-align: center;
+  transition: box-shadow 200ms ease, top 200ms ease, left 200ms ease;
+  box-shadow: 2px 2px 0 2px #da3733;
+  float: right;
+}
+form button:active {
+  left: 2px;
+  top: 2px;
+  box-shadow: 1px 1px 0 1px #da3733;
+}

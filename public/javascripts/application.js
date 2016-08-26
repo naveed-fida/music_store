@@ -1,0 +1,6 @@
+var App = {
+
+  init: function() {
+    
+  }
+};

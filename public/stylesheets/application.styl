@@ -1,0 +1,52 @@
+@import "whitespace-reset.css"
+@import "mixins"
+
+body
+  font: normal 15px lato
+main
+  width: 80%
+  margin: 0 auto
+  background: #fff
+  padding: 10px
+h1 
+  color: colors.primary
+  font-size: 2.2em
+  margin: 0 0 20px 10px
+h2
+  font-size: 1.5em
+  margin: 5px 0 10px 0
+h3
+  font-size: 1.2em
+  margin: 0 0 5px 0
+#albums
+  li
+    display: inline-block
+    width: 20%
+    padding: 10px
+    box-sizing: border-box
+    vertical-align: top
+    img
+      width: 100%;
+    a
+      button()
+      
+form
+  width: 500px
+  margin: 25px auto 0 auto
+  font-size: 18px
+  h1
+    margin-left: 0
+  input
+    margin: 5px 0 20px 0
+    font-size: 18px
+    padding: 6px
+    width: 100%
+    border-radius: 8px
+    border: 1px solid #bbb
+    box-sizing: border-box
+    &:focus
+      border: 1px solid colors.primary
+  button
+    button()
+    float: right
+    

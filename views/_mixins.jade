@@ -1,0 +1,8 @@
+mixin stylesheet_link_tag(src)
+  link(rel="stylesheet" href="/stylesheets/#{src}.css")
+
+mixin javascript_tag(src)
+  script(type="text/javascript" src="/javascripts/#{src}.js")
+
+mixin text_input_tag(name)
+  input(type="text" name="#{name}" id="#{name}")

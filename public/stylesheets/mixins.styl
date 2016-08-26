@@ -1,0 +1,29 @@
+@import 'https://fonts.googleapis.com/css?family=Lato'
+
+lato = 'Lato' sans-serif
+
+colors = {
+  bg: #FFD2B0,
+  primary: #DE4C49,
+  secondary: #FCB653
+}
+
+button()
+  position: relative
+  display: block
+  padding: 10px
+  font-size: 18px
+  text-decoration: none
+  color: #fff
+  cursor: pointer
+  border: none
+  background: colors.primary
+  border-radius: 8px
+  margin: 10px 0 0 0
+  text-align: center
+  transition: box-shadow 200ms ease, top 200ms ease, left 200ms ease
+  box-shadow: 2px 2px 0 2px darken(colors.primary, 5)
+  &:active
+    left: 2px
+    top: 2px
+    box-shadow: 1px 1px 0 1px darken(colors.primary, 5)
