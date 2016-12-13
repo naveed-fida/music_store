@@ -6,9 +6,21 @@ html
     title= "Music Store"
     +stylesheet_link_tag('application')
     +javascript_tag('vendor/all')
+    +javascript_tag('handlebars_templates')
   body
-    block content
-    +javascript_tag('models/album')
-    +javascript_tag('collections/albums')
-    +javascript_tag('application')
-    block scripts
+    header
+      #cart
+    main
+      block content
+      +javascript_tag('application')
+      +javascript_tag('models/album')
+      +javascript_tag('collections/albums')
+      +javascript_tag('views/index')
+      +javascript_tag('views/album')
+      +javascript_tag('views/new_album')
+      +javascript_tag('collections/cart_items')
+      +javascript_tag('views/cart')
+      script(type="text/javascript").
+        App.albums = new Albums(!{JSON.stringify(albums)});
+      +javascript_tag('router')
+      block scripts

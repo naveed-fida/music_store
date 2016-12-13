@@ -18,18 +18,24 @@ h2
 h3
   font-size: 1.2em
   margin: 0 0 5px 0
-#albums
-  li
-    display: inline-block
-    width: 20%
-    padding: 10px
-    box-sizing: border-box
-    vertical-align: top
-    img
-      width: 100%;
-    a
+#index
+  ul
+    li
+      display: inline-block
+      width: 20%
+      padding: 10px
+      box-sizing: border-box
+      vertical-align: top
+      img
+        width: 100%;
+      a
+        button()
+    & + a
       button()
-      
+      display: inline-block
+      margin: 20px 0 0 10px; 
+        
+        
 form
   width: 500px
   margin: 25px auto 0 auto
@@ -48,5 +54,25 @@ form
       border: 1px solid colors.primary
   button
     button()
-    float: right
     
+#cart
+  float: right
+  position: relative
+  margin: 20px 20px 0 0;
+  #items
+    background: colors.primary
+    padding: 12px
+    color: #fff
+    display: none
+    position: absolute
+    top: 100%
+    right: 100%;
+    td
+      padding: 10px
+      text-align: center;
+  input
+    display: none;
+    &:checked + #items
+      display: block
+    
+      

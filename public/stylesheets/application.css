@@ -22,17 +22,17 @@ h3 {
   font-size: 1.2em;
   margin: 0 0 5px 0;
 }
-#albums li {
+#index ul li {
   display: inline-block;
   width: 20%;
   padding: 10px;
   box-sizing: border-box;
   vertical-align: top;
 }
-#albums li img {
+#index ul li img {
   width: 100%;
 }
-#albums li a {
+#index ul li a {
   position: relative;
   display: block;
   padding: 10px;
@@ -48,7 +48,30 @@ h3 {
   transition: box-shadow 200ms ease, top 200ms ease, left 200ms ease;
   box-shadow: 2px 2px 0 2px #da3733;
 }
-#albums li a:active {
+#index ul li a:active {
+  left: 2px;
+  top: 2px;
+  box-shadow: 1px 1px 0 1px #da3733;
+}
+#index ul + a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: #de4c49;
+  border-radius: 8px;
+  margin: 10px 0 0 0;
+  text-align: center;
+  transition: box-shadow 200ms ease, top 200ms ease, left 200ms ease;
+  box-shadow: 2px 2px 0 2px #da3733;
+  display: inline-block;
+  margin: 20px 0 0 10px;
+}
+#index ul + a:active {
   left: 2px;
   top: 2px;
   box-shadow: 1px 1px 0 1px #da3733;
@@ -88,10 +111,33 @@ form button {
   text-align: center;
   transition: box-shadow 200ms ease, top 200ms ease, left 200ms ease;
   box-shadow: 2px 2px 0 2px #da3733;
-  float: right;
 }
 form button:active {
   left: 2px;
   top: 2px;
   box-shadow: 1px 1px 0 1px #da3733;
+}
+#cart {
+  float: right;
+  position: relative;
+  margin: 20px 20px 0 0;
+}
+#cart #items {
+  background: #de4c49;
+  padding: 12px;
+  color: #fff;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 100%;
+}
+#cart #items td {
+  padding: 10px;
+  text-align: center;
+}
+#cart input {
+  display: none;
+}
+#cart input:checked + #items {
+  display: block;
 }

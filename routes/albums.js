@@ -5,7 +5,9 @@ var Albums = require(path.resolve(path.dirname(__dirname), 'my_modules/albums.js
 
 module.exports = function(router) {
   router.get('/albums/new', function(req, res, next) {
-    res.render('new');
+    res.render('new', {
+      albums: Albums.get()
+    });
   });
 
   router.post('/albums', function(req, res) {
